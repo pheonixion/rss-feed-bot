@@ -6,11 +6,11 @@ from telegram import Bot
 from flask import Flask
 
 # Telegram & Feed setup
-TELEGRAM_TOKEN = os.getenv("BOT_TOKEN")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 RSS_URL = "https://rss.app/feeds/OUYIM0VGlxqKueAS.xml"
 
-bot = Bot(token=BOT_TOKEN)
+bot = Bot(token=TELEGRAM_TOKEN)
 app = Flask(__name__)
 sent_links = set()
 
